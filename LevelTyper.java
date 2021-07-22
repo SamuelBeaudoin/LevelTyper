@@ -165,6 +165,8 @@ public class LevelTyper extends javax.swing.JFrame implements Runnable {
             } catch (InterruptedException ex) {
                 Logger.getLogger(LevelTyper.class.getName()).log(Level.SEVERE, null, ex);
             }
+	robot.keyPress(KeyEvent.VK_ENTER);
+        robot.keyRelease(KeyEvent.VK_ENTER);
         }
     }
 }
